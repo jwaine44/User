@@ -30,7 +30,7 @@ eren.make_deposit(600)
 eren.make_deposit(40)
 eren.make_withdrawal(50)
 
-print(eren.account_balance)
+print("User:", str(eren.name + ","), "Balance:", eren.account_balance)
 
 # Second user makes 2 deposits and 2 withdrawals and display the balance
 
@@ -39,7 +39,7 @@ mikasa.make_deposit(200)
 mikasa.make_withdrawal(50)
 mikasa.make_withdrawal(10)
 
-print(mikasa.account_balance)
+print("User:", str(mikasa.name + ","), "Balance:", mikasa.account_balance)
 
 # Third user makes 1 deposit and 3 withdrawals and display the balance
 
@@ -48,11 +48,11 @@ reiner.make_withdrawal(15)
 reiner.make_withdrawal(25)
 reiner.make_withdrawal(60)
 
-print(reiner.account_balance)
+print("User:", str(reiner.name + ","), "Balance:", reiner.account_balance)
 
 # Have the first user transfer money to the third user and then print both users' balances
 
 eren.transfer_money(reiner, 200)
 
-print(eren.account_balance)
-print(reiner.account_balance)
+print("User:", str(eren.name + ","), "Balance:", eren.account_balance)
+print("User:", str(reiner.name + ","), "Balance:", reiner.account_balance)
